@@ -1,0 +1,23 @@
+Algorithm SentenceAnalysis
+Variables:
+    ch : character
+    length ← 0
+    words ← 1
+    vowels ← 0
+
+Repeat
+    Read(ch)
+    length ← length + 1
+
+    If ch = ' ' then
+        words ← words + 1
+    EndIf
+
+    If ch ∈ {'a','e','i','o','u','A','E','I','O','U'} then
+        vowels ← vowels + 1
+    EndIf
+
+Until ch = '.'
+
+Output length, words, vowels
+EndAlgorithm
